@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step into Aura Salon, a premium luxury beauty sanctuary. Reveal your beauty and elevate your confidence with expert styling, bridal makeup, skincare, and relaxing spa therapies.">
+    <title>AURA | Premium Luxury Beauty Salon & Spa</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Sticky Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">AURA<span>.</span></a>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#experts" class="nav-link">Experts</a></li>
+                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li><a href="#faq" class="nav-link">FAQ</a></li>
+                    <li><a href="#booking" class="btn-nav">Book Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-content text-reveal">
+            <span class="sub-headline">L'EXPERIENCE DE LA BEAUTÉ</span>
+            <h1 class="main-title">Reveal Your Beauty, <br><span class="highlight-text">Elevate Your Confidence</span></h1>
+            <p class="hero-description">Step into a sanctuary of elegance and luxury. Experience personalized, high-end styling, rejuvenating treatments, and makeup artistry designed to showcase your unique radiance.</p>
+            <div class="hero-ctas">
+                <a href="#booking" class="btn btn-primary">Book Appointment</a>
+                <a href="#services" class="btn btn-secondary">View Services</a>
+            </div>
+        </div>
+        
+        <!-- Animated Scroll Indicator -->
+        <a href="#services" class="scroll-down-indicator" aria-label="Scroll to services">
+            <span class="mouse-icon">
+                <span class="wheel"></span>
+            </span>
+            <span class="arrow-down"></span>
+        </a>
+    </section>
+
+    <!-- Animated Counters Section -->
+    <section class="stats-section py-large">
+        <div class="container grid-stats">
+            <div class="stat-card reveal fade-in-up">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="15000">0</span>
+                    <span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Happy Clients</p>
+            </div>
+            <div class="stat-card reveal fade-in-up" data-delay="100">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="45">0</span>
+                    <span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Premium Services</p>
+            </div>
+            <div class="stat-card reveal fade-in-up" data-delay="200">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="12">0</span>
+                    <span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Years of Experience</p>
+            </div>
+            <div class="stat-card reveal fade-in-up" data-delay="300">
+                <div class="stat-number-wrapper">
+                    <span class="stat-number" data-target="18">0</span>
+                    <span class="stat-plus">+</span>
+                </div>
+                <p class="stat-label">Salon Awards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section py-large">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">Our Premium Offerings</span>
+                <h2 class="section-title">Indulge In Luxury Services</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Hair Card -->
+                <div class="service-card reveal fade-in-up" style="background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.95)), url('https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80')">
+                    <div class="service-icon">
+                        <!-- Hair Comb & Scissors SVG -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M19.5,12A1.5,1.5 0 0,0 18,13.5A1.5,1.5 0 0,0 19.5,15A1.5,1.5 0 0,0 21,13.5A1.5,1.5 0 0,0 19.5,12M19.5,16A1.5,1.5 0 0,0 18,17.5A1.5,1.5 0 0,0 19.5,19A1.5,1.5 0 0,0 21,17.5A1.5,1.5 0 0,0 19.5,16M19.5,8A1.5,1.5 0 0,0 18,9.5A1.5,1.5 0 0,0 19.5,11A1.5,1.5 0 0,0 21,9.5A1.5,1.5 0 0,0 19.5,8M19.5,4A1.5,1.5 0 0,0 18,5.5A1.5,1.5 0 0,0 19.5,7A1.5,1.5 0 0,0 21,5.5A1.5,1.5 0 0,0 19.5,4M9.5,5C7,5 5,7 5,9.5C5,11.36 6.14,12.96 7.76,13.63L4.83,19.5L6.62,20.4L9.56,14.5H9.44C11.94,14.5 13.94,12.5 13.94,10C13.94,8.5 13.16,7.18 12,6.4L15.34,19.78L17.29,19.3L13.78,5.25C13.88,5.17 13.94,5.09 14,5L12.5,3.5L10.9,5.1C10.47,5.03 10,5 9.5,5M9.5,7A2.5,2.5 0 0,1 12,9.5A2.5,2.5 0 0,1 9.5,12A2.5,2.5 0 0,1 7,9.5A2.5,2.5 0 0,1 9.5,7Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Hair Styling</h3>
+                    <p class="service-description">From high-end couture haircuts and custom blowouts to balayage, highlights, and deep conditioning therapies that restore brilliance.</p>
+                    <div class="service-footer">
+                        <span class="service-price">Starts at $65</span>
+                        <a href="#booking" class="service-link">
+                            Book Now
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Bridal Makeup Card -->
+                <div class="service-card reveal fade-in-up" data-delay="100" style="background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.95)), url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80')">
+                    <div class="service-icon">
+                        <!-- Makeup Mirror/Brush SVG -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M12,2A6,6 0 0,1 18,8C18,11.3 15.3,14 12,14A6,6 0 0,1 6,8A6,6 0 0,1 12,2M12,4A4,4 0 0,0 8,8A4,4 0 0,0 12,12A4,4 0 0,0 16,8A4,4 0 0,0 12,4M12,15C13.5,15 15.6,15.5 17.5,16.5C19.4,17.5 20.5,19 20.5,20.5V22H3.5V20.5C3.5,19 4.6,17.5 6.5,16.5C8.4,15.5 10.5,15 12,15M12,16.9C10.2,16.9 8.2,17.4 6.9,18.1C5.6,18.8 5.4,19.6 5.4,20.1V20.2H18.6V20.1C18.6,19.6 18.4,18.8 17.1,18.1C15.8,17.4 13.8,16.9 12,16.9Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Bridal Makeup</h3>
+                    <p class="service-description">Exquisite airbrush and traditional bridal cosmetics tailored to photograph beautifully and last flawlessly through your special celebration.</p>
+                    <div class="service-footer">
+                        <span class="service-price">Starts at $150</span>
+                        <a href="#booking" class="service-link">
+                            Book Now
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Skincare Card -->
+                <div class="service-card reveal fade-in-up" data-delay="200" style="background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.95)), url('https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80')">
+                    <div class="service-icon">
+                        <!-- Skin Face Lotus SVG -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10A10 10 0 0 0 12 2m0 18a8 8 0 0 1-8-8c0-1.74.56-3.35 1.5-4.67C6.67 9.8 9.17 11 12 11s5.33-1.2 6.5-3.67c.94 1.32 1.5 2.93 1.5 4.67a8 8 0 0 1-8 8m-4.5-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m9 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3M12 14c-1.9 0-3.66.74-5 1.96C8.34 17.26 10.1 18 12 18s3.66-.74 5-2.04c-1.34-1.22-3.1-1.96-12-1.96z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Skincare</h3>
+                    <p class="service-description">Advanced chemical peels, hydrafacials, dermaplaning, and custom serums curated to restore collagen, target blemishes, and lock in radiance.</p>
+                    <div class="service-footer">
+                        <span class="service-price">Starts at $85</span>
+                        <a href="#booking" class="service-link">
+                            Book Now
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Nail Art Card -->
+                <div class="service-card reveal fade-in-up" data-delay="300" style="background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.95)), url('https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80')">
+                    <div class="service-icon">
+                        <!-- Nails SVG -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M19 8c-.6 0-1.1.2-1.5.5L16.2 7c.5-.9.8-1.9.8-3 0-2.2-1.8-4-4-4S9 1.8 9 4c0 1.1.3 2.1.8 3L8.5 8.5C8.1 8.2 7.6 8 7 8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4s4-1.8 4-4v-5l2-2 2 2v5c0 2.2 1.8 4 4 4s4-1.8 4-4v-8c0-2.2-1.8-4-4-4zm-7-4c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm-5 8c0-1.1.9-2 2-2s2 .9 2 2v8c0 1.1-.9 2-2 2s-2-.9-2-2v-8zm12 8c0 1.1-.9 2-2 2s-2-.9-2-2v-8c0-1.1.9-2 2-2s2 .9 2 2v8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Nail Art</h3>
+                    <p class="service-description">Gel extensions, customized hand-painted luxury designs, paraffin manicure, and organic pedicure therapies that express beauty to your fingertips.</p>
+                    <div class="service-footer">
+                        <span class="service-price">Starts at $45</span>
+                        <a href="#booking" class="service-link">
+                            Book Now
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Spa Card -->
+                <div class="service-card reveal fade-in-up" data-delay="400" style="background-image: linear-gradient(rgba(17, 17, 17, 0.75), rgba(17, 17, 17, 0.95)), url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80')">
+                    <div class="service-icon">
+                        <!-- Hot Stones/Flower SVG -->
+                        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+                            <path d="M12.97,2.86C12.56,2.16 11.44,2.16 11.03,2.86C9.17,6 7,8.23 7,10.5C7,13.26 9.24,15.5 12,15.5C14.76,15.5 17,13.26 17,10.5C17,8.23 14.83,6 12.97,2.86M12,13.5C10.34,13.5 9,12.16 9,10.5C9,9.45 10.16,7.84 12,5.27C13.84,7.84 15,9.45 15,10.5C15,12.16 13.66,13.5 12,13.5M6,17H18V19H6V17M4,21H20V23H4V21Z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Spa & Massage</h3>
+                    <p class="service-description">Full-body hot stone massages, relaxing aromatherapies, and herbal body wraps that clear tension and leave your soul in pure bliss.</p>
+                    <div class="service-footer">
+                        <span class="service-price">Starts at $110</span>
+                        <a href="#booking" class="service-link">
+                            Book Now
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Transformation Gallery -->
+    <section id="gallery" class="gallery-section py-large bg-black-accent">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">Visual Excellence</span>
+                <h2 class="section-title">Before & After Makeover</h2>
+                <div class="title-divider"></div>
+                <p class="section-desc">Drag the slider handle sideways to witness the stunning makeup and styling transformation created by our artists.</p>
+            </div>
+
+            <!-- Drag Slider Widget -->
+            <div class="before-after-container reveal fade-in-up">
+                <!-- After Image (Background) -->
+                <img src="assets/after_model.png" alt="Glamorous makeup transformation after style treatment" class="img-after">
+                
+                <!-- Before Image (Resizable Overlay) -->
+                <div class="before-img-wrapper">
+                    <img src="assets/before_model.png" alt="Natural no-makeup face before style treatment" class="img-before">
+                </div>
+
+                <!-- Labels -->
+                <span class="label-badge badge-before">BEFORE</span>
+                <span class="label-badge badge-after">AFTER</span>
+
+                <!-- Slider Divider Bar and Handle -->
+                <div class="slider-divider">
+                    <div class="slider-handle">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                            <path d="M8,14V18L2,12L8,6V10H16V6L22,12L16,18V14H8Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-large">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">Client Love</span>
+                <h2 class="section-title">What Our Guests Say</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <!-- Custom Auto-sliding Carousel -->
+            <div class="testimonials-carousel-wrapper reveal fade-in-up">
+                <div class="testimonials-carousel" id="testimonials-carousel">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">"Aura is absolutely the best luxury salon I have ever visited! The hair styling was exquisite, and the blush-pink design layout makes the whole atmosphere feel like a royal pampering session. I left feeling so confident!"</p>
+                            <h4 class="client-name">Madelyn Vance</h4>
+                            <span class="client-title">Bridal Client</span>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">"The skincare treatments here are therapeutic. Dr. Aria Chen curated a custom facial routine for me that worked miracles on my dry skin in just one week. Highly recommend their royal spa packages!"</p>
+                            <h4 class="client-name">Chloe Sterling</h4>
+                            <span class="client-title">Monthly VIP Guest</span>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">"My wedding makeup was perfect! Elena was calm, professional, and listened to exactly what I wanted. It stayed glowing and flawless for 12 hours. Best salon service ever."</p>
+                            <h4 class="client-name">Isabella Thorne</h4>
+                            <span class="client-title">Newlywed Bride</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <div class="carousel-nav">
+                    <button class="btn-carousel prev-btn" aria-label="Previous Testimonial">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+                    </button>
+                    <div class="carousel-dots" id="carousel-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="btn-carousel next-btn" aria-label="Next Testimonial">
+                        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Our Experts -->
+    <section id="experts" class="experts-section py-large bg-black-accent">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">The Artists</span>
+                <h2 class="section-title">Meet Our Beauty Experts</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="experts-grid">
+                <!-- Expert 1 -->
+                <div class="expert-card reveal fade-in-up">
+                    <div class="expert-img-container">
+                        <img src="assets/expert_1.png" alt="Sophia Loren, Master Hair Stylist">
+                        <div class="expert-socials">
+                            <a href="#" class="social-link-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4A3.6,3.6 0 0,0 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6A3.6,3.6 0 0,0 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5Z"/></svg>
+                            </a>
+                            <a href="#" class="social-link-icon" aria-label="Pinterest">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.2,2C6.6,2 2,6.6 2,12.2C2,16.5 4.7,20.2 8.5,21.7C8.4,20.9 8.3,19.6 8.5,18.7C8.7,17.9 9.9,12.8 9.9,12.8C9.9,12.8 9.5,12 9.5,10.9C9.5,9.2 10.5,7.9 11.7,7.9C12.8,7.9 13.3,8.7 13.3,9.7C13.3,10.8 12.6,12.4 12.3,13.9C12,15.2 13,16.2 14.3,16.2C16.7,16.2 18.3,13.7 18.3,10.1C18.3,7.2 16.2,5.2 13,5.2C9.3,5.2 7,8 7,11.2C7,12.3 7.4,13.5 8,14.2C8.1,14.4 8.1,14.5 8.1,14.7C8,15.1 7.7,16.3 7.6,16.7C7.5,16.9 7.4,17 7.2,16.9C5.9,16.3 5.2,14.6 5.2,12.6C5.2,8.8 8.4,4.7 13.5,4.7C17.6,4.7 20.3,7.6 20.3,10.9C20.3,14.8 18,17.7 14.7,17.7C13.6,17.7 12.6,17.1 12.2,16.4C12.2,16.4 11.6,18.9 11.4,19.5C11,21 10,22.8 9.4,23.6C10.3,23.9 11.1,24 12,24C17.6,24 22,19.6 22,14C22,8.4 17.6,4 12,4C6.4,4 2,8.4 2,14C2,16.2 2.7,18.3 4,20C4.3,19.6 5.1,18.3 5.1,17.9C5.1,17.6 5.1,17.4 5,17.2C4.1,16.1 3.5,14.5 3.5,12.9C3.5,9.4 6.7,6.3 11.2,6.3C15.2,6.3 17.8,9.1 17.8,12.2C17.8,15.6 15.7,18 13.1,18C12.2,18 11.4,17.5 11.1,16.9C11.1,16.9 10.6,18.8 10.5,19.3C10.2,20.4 9.4,21.7 8.9,22.4C9.9,22.8 11,23 12.2,23C17.1,23 21,19.1 21,14.2C21,9.3 17.1,5.4 12.2,5.4Z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3 class="expert-name">Sophia Loren</h3>
+                        <p class="expert-role">Master Hair Stylist & Colorist</p>
+                    </div>
+                </div>
+
+                <!-- Expert 2 -->
+                <div class="expert-card reveal fade-in-up" data-delay="100">
+                    <div class="expert-img-container">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=500&q=80" alt="Elena Rostova, Lead Makeup Artist">
+                        <div class="expert-socials">
+                            <a href="#" class="social-link-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4A3.6,3.6 0 0,0 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6A3.6,3.6 0 0,0 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5Z"/></svg>
+                            </a>
+                            <a href="#" class="social-link-icon" aria-label="Pinterest">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.2,2C6.6,2 2,6.6 2,12.2C2,16.5 4.7,20.2 8.5,21.7C8.4,20.9 8.3,19.6 8.5,18.7C8.7,17.9 9.9,12.8 9.9,12.8C9.9,12.8 9.5,12 9.5,10.9C9.5,9.2 10.5,7.9 11.7,7.9C12.8,7.9 13.3,8.7 13.3,9.7C13.3,10.8 12.6,12.4 12.3,13.9C12,15.2 13,16.2 14.3,16.2C16.7,16.2 18.3,13.7 18.3,10.1C18.3,7.2 16.2,5.2 13,5.2C9.3,5.2 7,8 7,11.2C7,12.3 7.4,13.5 8,14.2C8.1,14.4 8.1,14.5 8.1,14.7C8,15.1 7.7,16.3 7.6,16.7C7.5,16.7 7.4,17 7.2,16.9C5.9,16.3 5.2,14.6 5.2,12.6C5.2,8.8 8.4,4.7 13.5,4.7C17.6,4.7 20.3,7.6 20.3,10.9C20.3,14.8 18,17.7 14.7,17.7C13.6,17.7 12.6,17.1 12.2,16.4C12.2,16.4 11.6,18.9 11.4,19.5C11,21 10,22.8 9.4,23.6C10.3,23.9 11.1,24 12,24C17.6,24 22,19.6 22,14C22,8.4 17.6,4 12,4C6.4,4 2,8.4 2,14C2,16.2 2.7,18.3 4,20C4.3,19.6 5.1,18.3 5.1,17.9C5.1,17.6 5.1,17.4 5,17.2C4.1,16.1 3.5,14.5 3.5,12.9C3.5,9.4 6.7,6.3 11.2,6.3C15.2,6.3 17.8,9.1 17.8,12.2C17.8,15.6 15.7,18 13.1,18C12.2,18 11.4,17.5 11.1,16.9C11.1,16.9 10.6,18.8 10.5,19.3C10.2,20.4 9.4,21.7 8.9,22.4C9.9,22.8 11,23 12.2,23C17.1,23 21,19.1 21,14.2C21,9.3 17.1,5.4 12.2,5.4Z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3 class="expert-name">Elena Rostova</h3>
+                        <p class="expert-role">Lead Makeup & Bridal Artist</p>
+                    </div>
+                </div>
+
+                <!-- Expert 3 -->
+                <div class="expert-card reveal fade-in-up" data-delay="200">
+                    <div class="expert-img-container">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Dr. Aria Chen, Skin Therapist">
+                        <div class="expert-socials">
+                            <a href="#" class="social-link-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4A3.6,3.6 0 0,0 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6A3.6,3.6 0 0,0 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5Z"/></svg>
+                            </a>
+                            <a href="#" class="social-link-icon" aria-label="Pinterest">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.2,2C6.6,2 2,6.6 2,12.2C2,16.5 4.7,20.2 8.5,21.7C8.4,20.9 8.3,19.6 8.5,18.7C8.7,17.9 9.9,12.8 9.9,12.8C9.9,12.8 9.5,12 9.5,10.9C9.5,9.2 10.5,7.9 11.7,7.9C12.8,7.9 13.3,8.7 13.3,9.7C13.3,10.8 12.6,12.4 12.3,13.9C12,15.2 13,16.2 14.3,16.2C16.7,16.2 18.3,13.7 18.3,10.1C18.3,7.2 16.2,5.2 13,5.2C9.3,5.2 7,8 7,11.2C7,12.3 7.4,13.5 8,14.2C8.1,14.4 8.1,14.5 8.1,14.7C8,15.1 7.7,16.3 7.6,16.7C7.5,16.7 7.4,17 7.2,16.9C5.9,16.3 5.2,14.6 5.2,12.6C5.2,8.8 8.4,4.7 13.5,4.7C17.6,4.7 20.3,7.6 20.3,10.9C20.3,14.8 18,17.7 14.7,17.7C13.6,17.7 12.6,17.1 12.2,16.4C12.2,16.4 11.6,18.9 11.4,19.5C11,21 10,22.8 9.4,23.6C10.3,23.9 11.1,24 12,24C17.6,24 22,19.6 22,14C22,8.4 17.6,4 12,4C6.4,4 2,8.4 2,14C2,16.2 2.7,18.3 4,20C4.3,19.6 5.1,18.3 5.1,17.9C5.1,17.6 5.1,17.4 5,17.2C4.1,16.1 3.5,14.5 3.5,12.9C3.5,9.4 6.7,6.3 11.2,6.3C15.2,6.3 17.8,9.1 17.8,12.2C17.8,15.6 15.7,18 13.1,18C12.2,18 11.4,17.5 11.1,16.9C11.1,16.9 10.6,18.8 10.5,19.3C10.2,20.4 9.4,21.7 8.9,22.4C9.9,22.8 11,23 12.2,23C17.1,23 21,19.1 21,14.2C21,9.3 17.1,5.4 12.2,5.4Z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="expert-info">
+                        <h3 class="expert-name">Dr. Aria Chen</h3>
+                        <p class="expert-role">Aesthetic Skin Care Therapist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section with Glassmorphism -->
+    <section id="pricing" class="pricing-section py-large">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">Our Pricing</span>
+                <h2 class="section-title">Luxurious Pampering Packages</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Package 1 -->
+                <div class="pricing-card glass-card reveal fade-in-up">
+                    <div class="card-badge">Popular</div>
+                    <h3 class="package-name">Classic Glow</h3>
+                    <div class="price-wrapper">
+                        <span class="currency">$</span>
+                        <span class="price-val">99</span>
+                        <span class="duration">/session</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><span>✔</span> Premium Couture Haircut</li>
+                        <li><span>✔</span> Hydrating Organic Facial</li>
+                        <li><span>✔</span> Essential Manicure & Pedicure</li>
+                        <li class="disabled"><span>✘</span> Custom Makeup Trial</li>
+                        <li class="disabled"><span>✘</span> Premium Aromatherapy Massage</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-secondary btn-full">Choose Package</a>
+                </div>
+
+                <!-- Package 2 (Highlighted) -->
+                <div class="pricing-card glass-card highlighted reveal fade-in-up" data-delay="100">
+                    <div class="card-badge">Most Loved</div>
+                    <h3 class="package-name">Luxury Makeover</h3>
+                    <div class="price-wrapper">
+                        <span class="currency">$</span>
+                        <span class="price-val">199</span>
+                        <span class="duration">/session</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><span>✔</span> Balayage or Custom Hair Color</li>
+                        <li><span>✔</span> Deep-cleansing Hydrafacial</li>
+                        <li><span>✔</span> Gel Extensions & Nail Art</li>
+                        <li><span>✔</span> Natural Glow Day Makeup</li>
+                        <li class="disabled"><span>✘</span> Premium Aromatherapy Massage</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-primary btn-full">Choose Package</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="pricing-card glass-card reveal fade-in-up" data-delay="200">
+                    <h3 class="package-name">Bridal Elegance</h3>
+                    <div class="price-wrapper">
+                        <span class="currency">$</span>
+                        <span class="price-val">349</span>
+                        <span class="duration">/event</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><span>✔</span> Airbrush Wedding Makeup (Trial + Event)</li>
+                        <li><span>✔</span> Elite Bridal Hair Styling</li>
+                        <li><span>✔</span> Luxury Gold Infused Skin Facial</li>
+                        <li><span>✔</span> Organic Rose Spa Pedicure</li>
+                        <li><span>✔</span> Complimentary Champagne Toast</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-secondary btn-full">Choose Package</a>
+                </div>
+
+                <!-- Package 4 -->
+                <div class="pricing-card glass-card reveal fade-in-up" data-delay="300">
+                    <h3 class="package-name">Royal Spa Ritual</h3>
+                    <div class="price-wrapper">
+                        <span class="currency">$</span>
+                        <span class="price-val">279</span>
+                        <span class="duration">/session</span>
+                    </div>
+                    <ul class="package-features">
+                        <li><span>✔</span> Full Body Aroma Hot Stone Massage</li>
+                        <li><span>✔</span> Rejuvenating Body Mud Wrap</li>
+                        <li><span>✔</span> Oxygen Skin-Infusion Therapy</li>
+                        <li><span>✔</span> Luxury Spa Pedicure with Massage</li>
+                        <li><span>✔</span> Relaxing Herbal Tea Ceremony</li>
+                    </ul>
+                    <a href="#booking" class="btn btn-secondary btn-full">Choose Package</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Form -->
+    <section id="booking" class="booking-section py-large bg-black-accent">
+        <div class="container booking-container">
+            <div class="booking-info-block reveal">
+                <span class="sub-title">Reservations</span>
+                <h2 class="section-title">Schedule Your Beauty Session</h2>
+                <p class="booking-desc">Secure your preferred date and expert with our easy online booking form. Feel free to list any special instructions, allergies, or questions. Our representative will contact you in under an hour to confirm.</p>
+                
+                <div class="contact-quick-list">
+                    <div class="quick-item">
+                        <div class="quick-icon">📞</div>
+                        <div>
+                            <h4>Call Direct</h4>
+                            <p>+1 (555) 832-9021</p>
+                        </div>
+                    </div>
+                    <div class="quick-item">
+                        <div class="quick-icon">✉</div>
+                        <div>
+                            <h4>Support Email</h4>
+                            <p>bookings@aurasalon.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Glass Card -->
+            <div class="booking-form-wrapper glass-card reveal fade-in-up">
+                <form id="appointment-form" class="booking-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-name">Full Name</label>
+                            <input type="text" id="booking-name" placeholder="E.g., Charlotte Sterling" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-email">Email Address</label>
+                            <input type="email" id="booking-email" placeholder="E.g., charlotte@example.com" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-phone">Phone Number</label>
+                            <input type="tel" id="booking-phone" placeholder="E.g., (555) 019-2831" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-service">Preferred Service</label>
+                            <select id="booking-service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="hair">Hair Styling & Treatment</option>
+                                <option value="makeup">Bridal Makeup Artistry</option>
+                                <option value="skin">Skincare & Hydrafacials</option>
+                                <option value="nail">Nail Art & Extensions</option>
+                                <option value="spa">Spa & Massage Rituals</option>
+                                <option value="package-classic">Classic Glow Package ($99)</option>
+                                <option value="package-makeover">Luxury Makeover Package ($199)</option>
+                                <option value="package-bridal">Bridal Elegance Package ($349)</option>
+                                <option value="package-spa">Royal Spa Ritual ($279)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="booking-date">Date Selection</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="booking-time">Preferred Time</label>
+                            <select id="booking-time" required>
+                                <option value="" disabled selected>Select a Time Slot</option>
+                                <option value="09:00">09:00 AM - 11:00 AM</option>
+                                <option value="11:00">11:00 AM - 01:00 PM</option>
+                                <option value="13:00">01:00 PM - 03:00 PM</option>
+                                <option value="15:00">03:00 PM - 05:00 PM</option>
+                                <option value="17:00">05:00 PM - 07:00 PM</option>
+                                <option value="19:00">07:00 PM - 09:00 PM</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="booking-expert">Preferred Expert (Optional)</label>
+                        <select id="booking-expert">
+                            <option value="any" selected>Any Available Expert</option>
+                            <option value="sophia">Sophia Loren (Hair Specialist)</option>
+                            <option value="elena">Elena Rostova (Makeup Artist)</option>
+                            <option value="aria">Dr. Aria Chen (Skin Specialist)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="booking-notes">Special Instructions (Optional)</label>
+                        <textarea id="booking-notes" rows="3" placeholder="Tell us about your preferences, allergies, or questions..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+                </form>
+
+                <!-- Success Overlay -->
+                <div class="booking-success-message" id="booking-success">
+                    <div class="success-icon">✓</div>
+                    <h3>Booking Request Sent!</h3>
+                    <p>Thank you for choosing AURA. We have received your booking details and will contact you via email or phone within 60 minutes to confirm your slot.</p>
+                    <button class="btn btn-secondary" id="close-success-btn">Book Another Session</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Grid -->
+    <section class="instagram-section py-large">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">Follow Us @AuraSalon</span>
+                <h2 class="section-title">Look Book & Aesthetics</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="instagram-grid">
+                <div class="instagram-item reveal scale-up">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=400&q=80" alt="Beautiful salon styling booth styling chair design">
+                    <div class="insta-overlay">
+                        <span class="insta-icon">♥</span>
+                        <span class="insta-handle">@AuraSalon</span>
+                    </div>
+                </div>
+                <div class="instagram-item reveal scale-up" data-delay="50">
+                    <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=400&q=80" alt="Elegant cosmetic cream skincare bottle flatlay">
+                    <div class="insta-overlay">
+                        <span class="insta-icon">♥</span>
+                        <span class="insta-handle">@AuraSalon</span>
+                    </div>
+                </div>
+                <div class="instagram-item reveal scale-up" data-delay="100">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=400&q=80" alt="Professional beauty lip liners and shadows close-up">
+                    <div class="insta-overlay">
+                        <span class="insta-icon">♥</span>
+                        <span class="insta-handle">@AuraSalon</span>
+                    </div>
+                </div>
+                <div class="instagram-item reveal scale-up" data-delay="150">
+                    <img src="https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&fit=crop&w=400&q=80" alt="Stunning metallic nail art tips manicured hands">
+                    <div class="insta-overlay">
+                        <span class="insta-icon">♥</span>
+                        <span class="insta-handle">@AuraSalon</span>
+                    </div>
+                </div>
+                <div class="instagram-item reveal scale-up" data-delay="200">
+                    <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=400&q=80" alt="Organic facial skincare oil dripping down massage face">
+                    <div class="insta-overlay">
+                        <span class="insta-icon">♥</span>
+                        <span class="insta-handle">@AuraSalon</span>
+                    </div>
+                </div>
+                <div class="instagram-item reveal scale-up" data-delay="250">
+                    <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=400&q=80" alt="Luxury spa cosmetics, aroma flowers bath bomb massage stones">
+                    <div class="insta-overlay">
+                        <span class="insta-icon">♥</span>
+                        <span class="insta-handle">@AuraSalon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="faq-section py-large bg-black-accent">
+        <div class="container">
+            <div class="section-header text-center reveal">
+                <span class="sub-title">Curiosities</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="title-divider"></div>
+            </div>
+
+            <div class="faq-accordion-wrapper reveal fade-in-up">
+                <!-- FAQ 1 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>How far in advance should I book my appointment?</span>
+                        <span class="faq-icon-plus"></span>
+                    </button>
+                    <div class="faq-panel">
+                        <p class="faq-answer">We recommend booking at least 1-2 weeks in advance for weekend styling, and 3-6 months in advance for large bridal events to secure your preferred date, time, and expert beautician.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>What is your cancellation policy?</span>
+                        <span class="faq-icon-plus"></span>
+                    </button>
+                    <div class="faq-panel">
+                        <p class="faq-answer">We understand that things change! We request a minimum of 24 hours notice for any cancellations or schedule adjustments. Cancellations within 24 hours will incur a 50% reservation fee.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Do you offer bridal makeup and hair trials?</span>
+                        <span class="faq-icon-plus"></span>
+                    </button>
+                    <div class="faq-panel">
+                        <p class="faq-answer">Yes, we absolutely do. Our Bridal Elegance package includes a detailed bridal makeup and styling consultation trial where we experiment with different styles until you find your dream wedding look.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Do you accept walk-in clients?</span>
+                        <span class="faq-icon-plus"></span>
+                    </button>
+                    <div class="faq-panel">
+                        <p class="faq-answer">While we highly encourage booking online in advance to avoid waiting, we do accept walk-in guests depending on daily expert availability. Just step in and ask at our front desk!</p>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="faq-item">
+                    <button class="faq-trigger">
+                        <span>Are the skin treatments safe for sensitive skin types?</span>
+                        <span class="faq-icon-plus"></span>
+                    </button>
+                    <div class="faq-panel">
+                        <p class="faq-answer">Yes! Dr. Aria Chen conducts a thorough skin analysis before starting any skin procedure. We customize all treatment formulas and only use luxury, dermatologically tested, and hypoallergenic serums.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer-area">
+        <!-- Footer Top: Grid Layout -->
+        <div class="container footer-grid">
+            <!-- Footer Info -->
+            <div class="footer-widget reveal">
+                <a href="#" class="logo footer-logo">AURA<span>.</span></a>
+                <p class="footer-desc">An elite sanctuary of elegance, styling, and premium aesthetic therapy. Empowering you to embrace your luxury confidence.</p>
+                <div class="footer-social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.2 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.95 14.22 5.95C15.31 5.95 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.9 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4A3.6,3.6 0 0,0 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6A3.6,3.6 0 0,0 16.4,4H7.6M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5Z"/></svg>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Pinterest">
+                        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12.2,2C6.6,2 2,6.6 2,12.2C2,16.5 4.7,20.2 8.5,21.7C8.4,20.9 8.3,19.6 8.5,18.7C8.7,17.9 9.9,12.8 9.9,12.8C9.9,12.8 9.5,12 9.5,10.9C9.5,9.2 10.5,7.9 11.7,7.9C12.8,7.9 13.3,8.7 13.3,9.7C13.3,10.8 12.6,12.4 12.3,13.9C12,15.2 13,16.2 14.3,16.2C16.7,16.2 18.3,13.7 18.3,10.1C18.3,7.2 16.2,5.2 13,5.2C9.3,5.2 7,8 7,11.2C7,12.3 7.4,13.5 8,14.2C8.1,14.4 8.1,14.5 8.1,14.7C8,15.1 7.7,16.3 7.6,16.7C7.5,16.7 7.4,17 7.2,16.9C5.9,16.3 5.2,14.6 5.2,12.6C5.2,8.8 8.4,4.7 13.5,4.7C17.6,4.7 20.3,7.6 20.3,10.9C20.3,14.8 18,17.7 14.7,17.7C13.6,17.7 12.6,17.1 12.2,16.4C12.2,16.4 11.6,18.9 11.4,19.5C11,21 10,22.8 9.4,23.6C10.3,23.9 11.1,24 12,24C17.6,24 22,19.6 22,14C22,8.4 17.6,4 12,4C6.4,4 2,8.4 2,14C2,16.2 2.7,18.3 4,20C4.3,19.6 5.1,18.3 5.1,17.9C5.1,17.6 5.1,17.4 5,17.2C4.1,16.1 3.5,14.5 3.5,12.9C3.5,9.4 6.7,6.3 11.2,6.3C15.2,6.3 17.8,9.1 17.8,12.2C17.8,15.6 15.7,18 13.1,18C12.2,18 11.4,17.5 11.1,16.9C11.1,16.9 10.6,18.8 10.5,19.3C10.2,20.4 9.4,21.7 8.9,22.4C9.9,22.8 11,23 12.2,23C17.1,23 21,19.1 21,14.2C21,9.3 17.1,5.4 12.2,5.4Z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Contact Details -->
+            <div class="footer-widget reveal" data-delay="100">
+                <h3 class="widget-title">Get In Touch</h3>
+                <ul class="footer-contact-list">
+                    <li>
+                        <span class="icon">📍</span>
+                        <span>742 Fifth Avenue, Luxury District, New York, NY 10019</span>
+                    </li>
+                    <li>
+                        <span class="icon">📞</span>
+                        <span>+1 (555) 832-9021</span>
+                    </li>
+                    <li>
+                        <span class="icon">✉</span>
+                        <span>support@aurasalon.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Footer Hours -->
+            <div class="footer-widget reveal" data-delay="200">
+                <h3 class="widget-title">Business Hours</h3>
+                <ul class="footer-hours-list">
+                    <li>
+                        <span class="day">Monday - Friday</span>
+                        <span class="hours">09:00 AM - 08:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="day">Saturday</span>
+                        <span class="hours">09:00 AM - 06:00 PM</span>
+                    </li>
+                    <li>
+                        <span class="day">Sunday</span>
+                        <span class="hours">10:00 AM - 04:00 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Google Map Embed Placeholder -->
+            <div class="footer-widget reveal" data-delay="300">
+                <h3 class="widget-title">Find Our Sanctuary</h3>
+                <div class="map-container-wrapper">
+                    <!-- Standard Google Map Embed (Styled & dark overlayed in CSS) -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.142293795014!2d-73.97361198459367!3d40.75889497932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c258faec4529f7%3A0xc3b8600d8d0bc261!2sFifth%20Ave%2C%20New%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" 
+                        class="map-frame" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade" 
+                        title="Google Map location of AURA Salon Fifth Ave">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom: copyright -->
+        <div class="footer-bottom">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 AURA Premium Salon & Spa. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Booking Button -->
+    <a href="https://wa.me/15558329021?text=Hello%20AURA%20Salon,%20I%20would%20like%20to%20book%20a%20luxury%20appointment!" 
+       class="floating-whatsapp-btn" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Book on WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M12.012 2c-5.506 0-9.97 4.458-9.97 9.957 0 1.758.46 3.456 1.332 4.972l-1.42 5.176 5.31-1.388c1.472.8 3.12 1.22 4.75 1.22h.004c5.506 0 9.97-4.458 9.97-9.96 0-2.66-1.04-5.16-2.92-7.037S14.672 2 12.012 2zm6.98 14.156c-.286.8-1.65 1.474-2.27 1.542-.564.06-1.294.095-2.09-.16-.51-.16-1.15-.36-1.92-.7-3.265-1.427-5.383-4.71-5.546-4.93-.162-.22-1.31-1.72-1.31-3.28 0-1.56.815-2.33 1.107-2.64.29-.31.642-.387.855-.387h.61c.214 0 .493-.08.77.597.287.7.98 2.38 1.062 2.55.084.17.14.368.026.595-.114.227-.17.37-.34.568-.173.197-.363.44-.52.59-.17.165-.353.344-.15.69.203.346.9 1.477 1.93 2.395 1.328 1.18 2.45 1.545 2.8 1.722.35.176.55.147.755-.09.204-.236.877-1.018 1.11-1.363.23-.346.46-.29.773-.173.314.116 1.986.93 2.327 1.1.34.17.57.255.65.39.083.138.083.8-.2 1.6z"/>
+        </svg>
+    </a>
+
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
